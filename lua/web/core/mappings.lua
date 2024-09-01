@@ -1,0 +1,17 @@
+local keymap = vim.keymap
+
+keymap.set("n", "<leader>y", '"+y', { desc = "Yank to System Clipboard" })
+keymap.set("v", "<leader>y", '"+y', { desc = "Yank to System Clipboard (Visual Mode)" })
+keymap.set("n", "<leader>d", '"+d', { desc = "Delete to System Clipboard" })
+keymap.set("v", "<leader>d", '"+d', { desc = "Delete to System Clipboard (Visual Mode)" })
+keymap.set("n", "n", "nzz", { desc = "Next Match and Center Screen" })
+keymap.set("n", "N", "Nzz", { desc = "Previous Match and Center Screen" })
+keymap.set("n", "]c", "]czz", { desc = "Jump Next Change and Center Screen" })
+keymap.set("n", "[c", "[czz", { desc = "Jump Previous Change and Center Screen" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll Up Half a Screen and Center" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll Down Half a Screen and Center" })
+keymap.set("n", "<PageDown>", "gjzz", { desc = "Scroll Down Through Wrapped Lines and Center" })
+keymap.set("n", "<PageUp>", "gkzz", { desc = "Scroll Up Through Wrapped Lines and Center" })
+keymap.set("i", "<C-s>", "<Esc>:w<CR>a", { desc = "Save Current Buffer (Insert Mode)" })
+keymap.set("n", "<leader>s", ":w<CR>", { desc = "Save Current Buffer (Normal Mode)" })
+keymap.set("n", "<leader>S", ":wa<CR>", { desc = "Save All Buffers (Normal Mode)" })
